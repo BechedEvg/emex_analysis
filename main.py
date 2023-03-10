@@ -137,6 +137,7 @@ def get_lists_dict_analogs(dict_product):
 def get_lists_product(input_lists):
     write_list = []
     for list_product in input_lists:
+        sleep(2)
         list_original_product = list_product[:5]
         vendor_cod = list_product[0]
         dict_product = get_emex_dict_products(vendor_cod)
